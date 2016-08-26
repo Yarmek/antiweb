@@ -19,7 +19,14 @@ python:
   - "3.4"
   - "3.5"
 # command to install dependencies and the script itself
-install: "python setup.py install"
+install:
+  - "python setup.py install"
+  - "pip install --user travis-sphinx"
 # command to run tests
-script: python -m unittest discover
+script:
+  - python -m unittest discover
+  - travis-sphinx --source=documentation/source --branches=antiweb_testdoc build
+
+after_success:
+  - travis-sphinx deploy
 #@edoc()
