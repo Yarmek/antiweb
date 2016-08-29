@@ -48,7 +48,7 @@ extensions = [
 ]
 
 #The graphviz_dot path is being set here
-graphviz_dot = '/usr/local/bin/dot'
+graphviz_dot = '/usr/bin/dot'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
