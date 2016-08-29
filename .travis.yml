@@ -31,5 +31,5 @@ script:
   - travis-sphinx --source=documentation/source --branches=antiweb_testdoc build
 
 after_success:
-  - travis-sphinx deploy
+  - travis-sphinx --branches=antiweb_testdoc deploy
 #@edoc()
