@@ -28,8 +28,8 @@ install:
 # command to run tests
 script:
   - python -m unittest discover
-  - travis-sphinx --source=documentation/source --branches=antiweb_testdoc build
+  - travis-sphinx --source=documentation/source --branches=antiweb_testdoc,work build
 
 after_success:
-  - travis-sphinx --branches=antiweb_testdoc deploy
+  - travis-sphinx --branches=antiweb_testdoc,work deploy
 #@edoc()
