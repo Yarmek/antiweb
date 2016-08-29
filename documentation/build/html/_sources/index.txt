@@ -20,3 +20,4 @@ Contents:
    .. (generated)
    motivation
    travis
+   change_regex
