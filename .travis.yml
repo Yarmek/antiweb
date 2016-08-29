@@ -27,7 +27,7 @@ install:
 # command to run tests
 script:
   - python -m unittest discover
-  - travis-sphinx --source=documentation/source --branches=antiweb_testdoc build -D graphviz_dot=/usr/local/bin/dot
+  - travis-sphinx --source=documentation/source --branches=antiweb_testdoc build
 
 after_success:
   - travis-sphinx deploy
