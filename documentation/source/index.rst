@@ -9,10 +9,7 @@ Contents:
    getting_started
    process_overview
    antiweb
-   directives
-   document
-   Reader
-   write
+   structure
    antisphinx
    changelog
    motivation
