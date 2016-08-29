@@ -11,6 +11,7 @@
 #@code()
 # in which language the script was written
 language: python
+sudo: required
 # on which operating systems the tests should be performed
 os:
   - linux
@@ -22,7 +23,7 @@ python:
 install:
   - "python setup.py install"
   - "pip install sphinx_rtd_theme"
-  - "pip install graphviz"
+  - "sudo apt-get install graphviz"
   - "pip install travis-sphinx"
 # command to run tests
 script:
