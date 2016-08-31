@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Change Version Number &mdash; antiweb 0.3.3 documentation</title>
+    
+    <link rel="stylesheet" href="_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootswatch-3.3.6/flatly/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.3.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="antiweb 0.3.3 documentation" href="index.html" />
+    <link rel="prev" title="Travis-CI" href="travis.html" />
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+  </head>
+  <body role="document">
+
+  <div id="navbar" class="navbar  navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          antiweb</a>
+        <span class="navbar-text navbar-version pull-left"><b>0.3.3</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="index.html">Contents <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#overview-of-the-installation-steps">Overview of the installation steps:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#install-python">Install Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#install-antiweb">Install antiweb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#install-graphviz-optional">Install Graphviz (Optional)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#start">&#64;start</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#rstart-text-block-name">&#64;rstart(text block name)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#cstart-text-block-name">&#64;cstart(text block name)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#text-block-name">&#64;[(text block name)]</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#include-text-block-name-file">&#64;include(text block name [, file])</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#rinclude-text-block-name">&#64;RInclude(text block name)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#code">&#64;code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#edoc">&#64;edoc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#titles">Titles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#indent-spaces">&#64;indent spaces</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#define-identifier-substitution">&#64;define(identifier[, substitution])</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#enifed-identifier">&#64;enifed(identifier)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#subst-identifier">&#64;subst(identifier)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#if-token-name">&#64;if(token name)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#fi-token-name">&#64;fi(token name)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#ignore">&#64;ignore</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#indentation-matters">Indentation matters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="process_overview.html">Process overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="process_overview.html#creating-rst-files-through-antiweb">Creating rst files through antiweb</a></li>
+<li class="toctree-l2"><a class="reference internal" href="process_overview.html#creating-the-documentation-with-sphinx">Creating the documentation with Sphinx</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="antiweb.html">antiweb</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="antiweb.html#objects">Objects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="antiweb.html#file-layout">File Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="antiweb.html#multi-file-processing-and-sphinx-support">Multi-File Processing and Sphinx Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="antiweb.html#how-to-add-new-languages">How to add new languages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="antiweb.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="structure.html">Package Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="directives.html">Directives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Reader.html">Readers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="document.html">Document</a></li>
+<li class="toctree-l2"><a class="reference internal" href="write.html">Write</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="antisphinx.html">antisphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="antisphinx.html#file-layout">File Layout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="antisphinx.html#exports">&lt;&lt;exports&gt;&gt;</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="travis.html">Travis-CI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="travis.html#the-travis-ci-file">The Travis-CI file</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Change Version Number</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#errors">Errors</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">On this Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Change Version Number</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#errors">Errors</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="travis.html" title="Previous Chapter: Travis-CI"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Travis-CI</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content">
+      
+  <div class="section" id="change-version-number">
+<h1>Change Version Number<a class="headerlink" href="#change-version-number" title="Permalink to this headline">¶</a></h1>
+<p>This standalone script, called <cite>change-version.py</cite>, will search for all occurences of version statements and replace them with a new version number. This is needed because we
+have a handful of different meta and config files  which contain version statements.</p>
+<p>Normally you would have to search through all files manually and change the version number in every single file. With this script we can
+save time by letting it search and replace the version number for us.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>The usage of <cite>change-version.py</cite> is quite simple:</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="n">change</span><span class="o">-</span><span class="n">version</span><span class="o">.</span><span class="n">py</span> <span class="n">new_version</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="main">
+<code class="descname">main</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#main" title="Permalink to this definition">¶</a></dt>
+<dd><p>The <cite>main()</cite> function contains the recursive search for files and the replacement of the old version number.</p>
+</dd></dl>
+
+<p>We set the arguments coming from the command line. If there is not exactly one argument, print the usage and exit.</p>
+<div class="highlight-python3"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">argv</span><span class="p">):</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">len</span><span class="p">(</span><span class="n">argv</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span> <span class="c1"># own script name and first argument</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Usage: change-version.py new_version (e.g., 0.3.3)&quot;</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">new_version_number</span> <span class="o">=</span> <span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+    <span class="n">own_script_name</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">argv</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</td></tr></table></div>
+<p>The regex search pattern is defined as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Search for occurences of the word <cite>version</cite>, followed by any number of any character.</li>
+<li>That sequence is then consolidated as the first group.</li>
+<li>It must then be followed by a digit, dot, digit, dot, digit (e.g., 0.3.3).</li>
+<li>The digit/dot sequence is consolidated as the second group.</li>
+<li>The whole pattern is NOT case sensitive and takes place in a single line.</li>
+</ul>
+</div></blockquote>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="n">pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">r&#39;(version.*)(\d+\.\d+\.\d+)&#39;</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The directories in which we do not want to search for occurences of the version number are defined.
+This is needed, because there are generated files in the directory that raise an encoding error when being read.</p>
+<div class="highlight-python3"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">excluded_dirs</span> <span class="o">=</span> <span class="nb">set</span><span class="p">([</span><span class="s1">&#39;.git&#39;</span><span class="p">,</span> <span class="s1">&#39;__pycache__&#39;</span><span class="p">,</span> <span class="s1">&#39;dist&#39;</span><span class="p">,</span> <span class="s1">&#39;doctrees&#39;</span><span class="p">,</span> <span class="s1">&#39;build&#39;</span><span class="p">])</span>
+
+
+<span class="k">for</span> <span class="n">root</span><span class="p">,</span> <span class="n">dirs</span><span class="p">,</span> <span class="n">filenames</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">walk</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">(),</span> <span class="n">topdown</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">dirs</span><span class="p">[:]</span> <span class="o">=</span> <span class="p">[</span><span class="n">directory</span>
+                   <span class="k">for</span> <span class="n">directory</span> <span class="ow">in</span> <span class="n">dirs</span>
+                       <span class="k">if</span> <span class="n">directory</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">excluded_dirs</span><span class="p">]</span>
+
+    <span class="k">for</span> <span class="n">filename</span> <span class="ow">in</span> <span class="n">filenames</span><span class="p">:</span>
+        <span class="n">absolute_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>Our tool would also find and replace the version number in our documentation files and the changelog, we do
+not want to change those and therefore exclude <cite>.rst</cite> files. We also exclude the script itself, <cite>change-version.py</cite>,
+because we do not want it to be changed.</p>
+<div class="highlight-python3"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">absolute_path</span><span class="p">)</span> <span class="ow">and</span> \
+    <span class="ow">not</span> <span class="n">absolute_path</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s1">&#39;.rst&#39;</span><span class="p">)</span> <span class="ow">and</span> \
+    <span class="ow">not</span> <span class="n">filename</span> <span class="o">==</span> <span class="n">own_script_name</span><span class="p">:</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">absolute_path</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">input_file</span><span class="p">:</span>
+
+        <span class="n">lines</span> <span class="o">=</span> <span class="n">input_file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</pre></div>
+</td></tr></table></div>
+<p>If there is a line that matches our criteria, we save that <cite>match</cite>. The user then gets notified that there
+is a matching line in a file.</p>
+<div class="highlight-python3"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">lines</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">match</span><span class="p">:</span>
+    <span class="n">old_version</span> <span class="o">=</span> <span class="n">match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">absolute_path</span><span class="p">,</span> <span class="n">old_version</span><span class="p">,</span> <span class="s2">&quot;--&gt;&quot;</span><span class="p">,</span> <span class="n">new_version_number</span><span class="p">)</span>
+</pre></div>
+</td></tr></table></div>
+<p>When substituting the old version number, we replace the whole match (e.g., __version__ = 0.3.3) and
+re-use the first group (e.g., __version__ = ) to combine it with the new version number.</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">absolute_path</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">output_file</span><span class="p">:</span>
+    <span class="n">new_version</span> <span class="o">=</span> <span class="s1">r&#39;\g&lt;1&gt;&#39;</span> <span class="o">+</span> <span class="n">new_version_number</span>
+    <span class="n">output_file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">pattern</span><span class="p">,</span> <span class="n">new_version</span><span class="p">,</span> <span class="n">lines</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Running the following command:</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="n">antiweb_work</span><span class="o">&gt;</span> <span class="n">change</span><span class="o">-</span><span class="n">version</span><span class="o">.</span><span class="n">py</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">4</span>
+</pre></div>
+</div>
+<p>Gives the following output:</p>
+<div class="highlight-python3"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">antiweb_work</span><span class="o">/</span><span class="n">PKG</span><span class="o">-</span><span class="n">INFO</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">3</span> <span class="o">--&gt;</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">4</span>
+<span class="n">antiweb_work</span><span class="o">/</span><span class="n">README</span><span class="o">.</span><span class="n">md</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">3</span> <span class="o">--&gt;</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">4</span>
+<span class="n">antiweb_work</span><span class="o">/</span><span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">3</span> <span class="o">--&gt;</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">4</span>
+<span class="n">antiweb_work</span><span class="o">/</span><span class="n">antiweb</span><span class="o">.</span><span class="n">egg</span><span class="o">-</span><span class="n">info</span><span class="o">/</span><span class="n">PKG</span><span class="o">-</span><span class="n">INFO</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">3</span> <span class="o">--&gt;</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">4</span>
+<span class="n">antiweb_work</span><span class="o">/</span><span class="n">documentation</span><span class="o">/</span><span class="n">source</span><span class="o">/</span><span class="n">conf</span><span class="o">.</span><span class="n">py</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">3</span> <span class="o">--&gt;</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">4</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<div class="section" id="errors">
+<h2>Errors<a class="headerlink" href="#errors" title="Permalink to this headline">¶</a></h2>
+<p>When no version statements are found, <cite>change-version.py</cite> does not raise an error but runs without touching any files
+or giving any output in the command line.</p>
+<p>When the user provides not exactly one argument, <cite>change-version.py</cite> shows the following usage message:</p>
+<div class="highlight-python3"><div class="highlight"><pre><span></span><span class="n">Usage</span><span class="p">:</span> <span class="n">change</span><span class="o">-</span><span class="n">version</span><span class="o">.</span><span class="n">py</span> <span class="n">new_version</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span><span class="p">,</span> <span class="mf">0.3</span><span class="o">.</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+        <br/>
+        
+<div id="sourcelink">
+  <a href="_sources/change-version.txt"
+     rel="nofollow">Source</a>
+</div>
+      
+    </p>
+    <p>
+        &copy; Copyright 2016, Michael Reithinger, Philipp Rathmanner, Lukas Tanner, Philipp Grandits, Christian Eitner.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.5.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
